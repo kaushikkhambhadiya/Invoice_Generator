@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/one"
+        >
+        <item
+            android:id="@+id/nav_camera"
+            android:title="InvoiceList"
+            />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/two"
+        >
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:title="BuyerList" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/three"
+        >
+
+    <item
+        android:id="@+id/nav_slideshow"
+        android:title="ProductList" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/four"
+        >
+
+    <item
+        android:id="@+id/nav_share"
+        android:title="Share" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/five"
+        >
+
+    <item
+        android:id="@+id/nav_send"
+        android:title="Rate"
+        android:visible="true"/>
+    </group>
+</menu>

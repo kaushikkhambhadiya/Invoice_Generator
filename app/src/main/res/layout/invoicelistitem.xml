@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llinvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/invoicenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_blue"
+            android:text="#1"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/invoicecustomerid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/invoicedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/12/2017"
+                    android:textColor="@color/color_black"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/_20sdp"
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/deleteinvoice"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/delete"
+                    android:layout_gravity="end"
+                    />
+
+                <ImageView
+                    android:id="@+id/Viewinvoice"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/viewinvoice"
+                    android:layout_gravity="end"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/color_blue"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
